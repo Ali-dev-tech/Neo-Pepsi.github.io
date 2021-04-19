@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<script src="pepsi.js"></script>
+    <title>#0062be</title>
+    <style>
+       
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins";
+    background: #0062be;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    padding: 10px 0 0 0;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    padding: 6px 15px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+section.main{
+   display: flex;
+   padding: 20px 10px;
+   justify-content: space-between;
+   align-items: center;
+}
+.content{
+    margin-left: 40px;
+}
+.content h2{
+    color: white;
+    font-size: 4em;
+    font-weight: 400;
+}
+.content h2 span{
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.content p{
+    color: white;
+}
+
+.icons{
+    margin-right: 30px;
+    align-items: center;
+}
+.icons li{
+    list-style: none;
+    margin: 10px 0;
+}
+.icons li:first-child{
+    margin-left: 6px;
+}
+.icons li a{
+    filter: invert(1);
+    transform: scale(0.6);
+     margin: 7px 0;
+}
+footer ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+footer img{
+    height: 100px;
+   padding: 0 10px;
+   cursor: pointer;
+}
+footer img:hover{
+    transform: translateY(-15px);
+}
+.java{
+    display: none;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <div class="mobile-menu" id="toggle-bar">
+            <span class="bars"></span>
+            <span class="bars"></span>
+            <span class="bars"></span>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="main">
+        <div class="content">
+            <h2>THAT'S WHAT <br> <span>I LIKE</span></h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi animi iure mollitia 
+            <br> atque facilis, ullam delectus maiores accusamus dignissimos quos recusandae dolorem 
+            <br> libero fuga consectetur voluptate veritatis 
+            aliquid laudantium dicta.</p>
+        </div>
+        <div class="img1">
+            <img class="pepsi1" id ="main-img" src="pepsi001.png" alt="">
+        </div>
+       
+        <div class="icons">
+            <ul>
+                <li><a href="https://www.facebook.com/NEO-TECH-Services-101817205288550"><img src="facebook.png"></a></li>
+                <li><a href="https://twitter.com/?lang=en"><img src="twitter.png"></a></li>
+                <li><a href="https://www.instagram.com/neotechservices/"><img src="instagram.png"></a></li>
+            </ul>
+               </div>
+    </section>
+    <footer>
+        <ul class="thumb">
+            <li><img id="thumb1" src="pepsi001.png"></li>
+            <li><img id="thumb2" src="pepsi002.png"></li>
+            <li><img id="thumb3" src="pepsi003.png"></li>
+           
+        </ul>
+    </footer>
+    <script type="text/javascript">
+    var mainimg = document.querySelector('.pepsi1')
+    var thumb2 = document.querySelector ('#thumb2')
+    var thumb1 = document.querySelector ('#thumb1')
+    var thumb3 = document.querySelector ('#thumb3')
+    thumb2.addEventListener('click', function(){
+        mainimg.src = "pepsi002.png"
+    })
+    thumb1.addEventListener('click', function(){
+        mainimg.src = "pepsi001.png"
+    })
+    thumb3.addEventListener('click', function(){
+        mainimg.src = "pepsi003.png"
+    })
+   
+      
+    </script>
+</body>
+</html>
+
