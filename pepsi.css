@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins";
+    background: #0062be;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    padding: 10px 0 0 0;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    padding: 6px 15px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+section.main{
+   display: flex;
+   padding: 20px 10px;
+   justify-content: space-between;
+   align-items: center;
+}
+.content{
+    margin-left: 40px;
+}
+.content h2{
+    color: white;
+    font-size: 4em;
+    font-weight: 400;
+}
+.content h2 span{
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.content p{
+    color: white;
+}
+
+.icons{
+    margin-right: 30px;
+    align-items: center;
+}
+.icons li{
+    list-style: none;
+    margin: 10px 0;
+}
+.icons li:first-child{
+    margin-left: 6px;
+}
+.icons li a{
+    filter: invert(1);
+    transform: scale(0.6);
+     margin: 7px 0;
+}
+footer ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+footer img{
+    height: 100px;
+   padding: 0 10px;
+   cursor: pointer;
+}
+footer img:hover{
+    transform: translateY(-15px);
+}
+.java{
+    display: none;
+}
